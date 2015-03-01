@@ -1498,16 +1498,16 @@
         },
         {
             "name": "sleeping-owl/admin",
-            "version": "2.0.13",
+            "version": "2.0.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sleeping-owl/admin.git",
-                "reference": "3931d0f0ec88ccbca6b364f8aaa8550450c794fb"
+                "reference": "de03e3da023e26ce1750221dc9f8c7dbac92e444"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sleeping-owl/admin/zipball/3931d0f0ec88ccbca6b364f8aaa8550450c794fb",
-                "reference": "3931d0f0ec88ccbca6b364f8aaa8550450c794fb",
+                "url": "https://api.github.com/repos/sleeping-owl/admin/zipball/de03e3da023e26ce1750221dc9f8c7dbac92e444",
+                "reference": "de03e3da023e26ce1750221dc9f8c7dbac92e444",
                 "shasum": ""
             },
             "require": {
@@ -1550,7 +1550,7 @@
                 "administrator",
                 "laravel"
             ],
-            "time": "2015-02-27 13:18:14"
+            "time": "2015-03-01 14:23:28"
         },
         {
             "name": "sleeping-owl/with-join",

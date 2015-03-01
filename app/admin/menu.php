@@ -15,4 +15,9 @@
  * 		});
  */
 
-Admin::menu()->url('/')->label('Start page')->icon('fa-dashboard')->uses('\SleepingOwl\Admin\Controllers\DummyController@getIndex');
+Admin::menu()->url('/')->label('Главная')->icon('fa-dashboard')->uses('App\Http\Controllers\HomeController@index');
+Admin::menu(App\News::class)->label('Новости');
+/*Admin::menu()->label('Subitems')->icon('fa-book')->items(function ()
+{
+    Admin::menu(App\News::class);
+});/*
