@@ -147,6 +147,7 @@ return [
 
 		'SleepingOwl\Admin\AdminServiceProvider',
 		'Illuminate\Html\HtmlServiceProvider',
+		'Intervention\Image\ImageServiceProvider',
 
 	],
 
@@ -205,6 +206,8 @@ return [
 
 		'Form'      => 'Illuminate\Html\FormFacade',
 		'Html'      => 'Illuminate\Html\HtmlFacade',
+
+		'Image' => 'Intervention\Image\Facades\Image'
 
 	],
 

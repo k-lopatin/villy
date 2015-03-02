@@ -1,5 +1,18 @@
 <?php
 
+FormItem::register('postImage', function ($instance)
+{
+    // implement your form element code here
+    if ($instance->exists)
+    {
+        // editing form
+    } else
+    {
+        // creating form
+    }
+    return 'my element';
+});
+
 /*
  * Describe you custom columns and form items here.
  *

@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "8453eeb01d3163948cb9bcb1904d7967",
+    "hash": "2a5842be4f6a2b331b90be90af46e2be",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -1498,16 +1498,16 @@
         },
         {
             "name": "sleeping-owl/admin",
-            "version": "2.0.14",
+            "version": "2.0.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sleeping-owl/admin.git",
-                "reference": "de03e3da023e26ce1750221dc9f8c7dbac92e444"
+                "reference": "d44a9f29f2781f26b5d66b8177405625faa6866a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sleeping-owl/admin/zipball/de03e3da023e26ce1750221dc9f8c7dbac92e444",
-                "reference": "de03e3da023e26ce1750221dc9f8c7dbac92e444",
+                "url": "https://api.github.com/repos/sleeping-owl/admin/zipball/d44a9f29f2781f26b5d66b8177405625faa6866a",
+                "reference": "d44a9f29f2781f26b5d66b8177405625faa6866a",
                 "shasum": ""
             },
             "require": {
@@ -1550,7 +1550,7 @@
                 "administrator",
                 "laravel"
             ],
-            "time": "2015-03-01 14:23:28"
+            "time": "2015-03-02 08:06:28"
         },
         {
             "name": "sleeping-owl/with-join",

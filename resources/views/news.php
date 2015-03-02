@@ -16,10 +16,11 @@
                         foreach($news as $singleNews){
                             $title = $singleNews->title;
                             $body = mb_substr(strip_tags($singleNews->body), 0, 60).'...';
+                            $img = asset('/images/uploads/'.$singleNews->photo);
                     ?>
                             <div class="three">
                                 <span class="three_img">
-                                    <img src="pictures/img_dlock.jpg"/>
+                                    <img src="<?=$img?>"/>
                                 </span>
                                 <a class="three_a" href="javascript: void(0);"><?=$title?></a>
                                 <p class="three_title">
@@ -36,7 +37,7 @@
                     <h5>Лента новостей</h5>
                     <ul class="newsline">
                         <?php
-                        foreach($news as $singleNews){
+                        foreach($lastNews as $singleNews){
                             $title = $singleNews->title;
                             $date = date('d.m.y', strtotime( $singleNews->created_at ) );
                         ?>
@@ -48,15 +49,8 @@
                     <a class="button_all" href="javascript: void(0);">Все новости</a>
                 </div>
                 <div class="cr"></div>
-                <ul class="pages">
-                    <li class="pages_l"><a href="javascript: void(0);">.</a></li>
-                    <li class="pages_activ"><a href="javascript: void(0);">1</a></li>
-                    <li><a href="javascript: void(0);">2</a></li>
-                    <li><a href="javascript: void(0);">3</a></li>
-                    <li><a href="javascript: void(0);">...</a></li>
-                    <li><a href="javascript: void(0);">17</a></li>
-                    <li class="pages_r" ><a href="javascript: void(0);">.</a></li>
-                </ul>
+                <?php echo with(new \App\Http\Controllers\Pagination($news))->render(); ?>
+                
                 <div class="hfooter"></div>
             </div>
             <!--=========================== \NEWS\  =================================-->

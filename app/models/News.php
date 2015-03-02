@@ -1,8 +1,9 @@
 <?php namespace App;
 
 //use Illuminate\Database\Eloquent\Model;
+use \SleepingOwl\Models\Interfaces\ModelWithImageFieldsInterface;
 
-class News extends \SleepingOwl\Models\SleepingOwlModel {
+class News extends \SleepingOwl\Models\SleepingOwlModel implements ModelWithImageFieldsInterface{
 
 
 	/**
@@ -17,6 +18,13 @@ class News extends \SleepingOwl\Models\SleepingOwlModel {
 	 *
 	 * @var array
 	 */
-	protected $fillable = ['title', 'body', 'created_at', 'updated_at'];
+	protected $fillable = ['title', 'body', 'created_at', 'updated_at', 'photo'];
+
+	public function getImageFields()
+    {
+        return [
+            'photo' => 'uploads/',
+        ];
+    }
 
 }

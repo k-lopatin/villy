@@ -939,11 +939,9 @@ a.ui-state-default.ui-state-active{color: #fff;background: #a0d468;}
 }
 .pages_l{
     background: url('../images/pags_l.png') scroll no-repeat left center;
-    text-indent: -99999px;
 }
 .pages_r{
     background: url('../images/pags_r.png') scroll no-repeat left center;
-    text-indent: -99999px;
 }
 .pages_activ{
     background: url('../images/pags_activ.png') scroll no-repeat left center;

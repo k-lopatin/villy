@@ -37,8 +37,11 @@ class NewsController extends Controller {
 	 */
 	public function index()
 	{
-		$news = News::all();
+		$news = News::paginate(2);
+		$lastNews = News::all()->take(15);
 		$this->viewVars['news'] = $news;
+		$this->viewVars['lastNews'] = $lastNews;
+		
 		return view('news', $this->viewVars);
 	}
 
