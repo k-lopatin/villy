@@ -12,6 +12,7 @@
 */
 
 Route::get('/', 'NewsController@index');
+Route::get('/{alias}', 'PageController@index');
 
 Route::get('home', 'HomeController@index');
 
